@@ -1,0 +1,18 @@
+.user-data-dive{
+    position: absolute;
+    background-color: red;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.user-data-dive img{
+    width:  50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.user-data-dive span{
+    font-size: 20px;
+}
