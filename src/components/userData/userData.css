@@ -1,10 +1,12 @@
 .user-data-dive{
     position: absolute;
-    background-color: red;
     right: 0;
     display: flex;
     align-items: center;
     height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
 }
 
 .user-data-dive img{
@@ -15,4 +17,10 @@
 
 .user-data-dive span{
     font-size: 20px;
+    margin-left: 5px;
+    color: white;
+}
+
+.testing{
+    border: 5px solid black;
 }
