@@ -1,28 +1,42 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 
 export default function AdminPage(){
 
     return(
-        <div className="w-full h-[100vh] bg-red-400">
-            <h1>Admin page Booking Rooms categries</h1>
-            <Routes path="/*">
-                <Route path="/romms" element={
-                    <div>
-                        <h1>Rooms</h1>
-                    </div>
-            }/>
-            <Route path="/booking" element={
-                <div>
-                    <h1>Booking</h1>
-                    </div>
-            }/>
-            <Route path="/" element={
-                <div>
-                    <h1>404</h1>
-                </div>
-            }/> 
+        <div className="w-full max-h-height-[100vh] overflow-hidden flex">
 
-            </Routes>
+            <div className="w-[20%] bg-blue-400 h-[100vh] flex flex-col">
+
+                <div className="text-white text-[30px] hover:text-[60px] hover:text-black">
+                    <Link to="/admin/bookings">Bookings</Link>
+                </div>
+
+                <div className="text-white text-[30px] hover:text-[60px] hover:text-black">
+                <Link to="/admin/bookings">Categories</Link>
+                </div>
+
+                <div className="text-white text-[30px] hover:text-[60px] hover:text-black">
+                    <Link to="/admin/bookings">Rooms</Link>
+                </div>
+
+                <div className="text-white text-[30px] hover:text-[60px] hover:text-black">
+                    <Link to="/admin/bookings">Users</Link>
+                </div>
+
+                <div className="text-white text-[30px] hover:text-[60px] hover:text-black">
+                    <Link to="/admin/bookings">Feedback</Link>
+                </div>
+
+                <div className="text-white text-[30px] hover:text-[60px] hover:text-black">
+                    <Link to="/admin/bookings">Gallary Items</Link>
+                </div>
+
+            </div>
+
+        <div className="w-[80%] bg-blue-900">
+
+        </div>
+
         </div>
     )
 }
