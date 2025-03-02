@@ -28,6 +28,14 @@ export default function AdminPage() {
 
             <div className="w-[80%] bg-blue-900">
                 {/* Admin page content goes here */}
+                <Routes>
+                    <Route path="bookings" element={<div>Bookings Page</div>} />
+                    <Route path="categories" element={<div>Categories Page</div>} />
+                    <Route path="rooms" element={<div>Rooms Page</div>} />
+                    <Route path="users" element={<div>Users Page</div>} />
+                    <Route path="feedback" element={<div>Feedback Page</div>} />
+                    <Route path="gallery" element={<div>Gallery Page</div>} />
+                </Routes>
             </div>
         </div>
     );
