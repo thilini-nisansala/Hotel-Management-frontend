@@ -1,10 +1,19 @@
 import { Link, Route, Routes } from "react-router-dom";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { MdOutlineCategory, MdOutlineRoom, MdPeopleOutline, MdFeedback, MdPhotoLibrary } from "react-icons/md";
+import AdminBookings from "../admin/Bookings/adminBooking";
+import AdminCategories from "../admin/categories/adminCategories";
+import AdminRooms from "../admin/rooms/rooms";
+import AdminUsers from "../admin/users/users";
+import AdminFeedback from "../admin/feedback/feedback";
+import AdminGalleryItems from "../admin/galleryItems/galleryitems";
+
+
+
 
 export default function AdminPage() {
     return (
-        <div className="w-full max-h-height-[100vh] overflow-hidden flex">
+        <div className="w-full max-h-[100vh] overflow-hidden flex">
             <div className="w-[20%] bg-blue-400 h-[100vh] flex flex-col">
                 <Link to="/admin/bookings" className="text-white text-[30px] hover:font-bold flex items-center gap-2">
                     <CiBookmarkCheck /> Bookings
@@ -26,15 +35,15 @@ export default function AdminPage() {
                 </Link>
             </div>
 
-            <div className="w-[80%] bg-blue-900">
+            <div className="w-[80%] max-h-[100vh] overflow-y-scroll bg-blue-900">
                 {/* Admin page content goes here */}
                 <Routes>
-                    <Route path="bookings" element={<div>Bookings Page</div>} />
-                    <Route path="categories" element={<div>Categories Page</div>} />
-                    <Route path="rooms" element={<div>Rooms Page</div>} />
-                    <Route path="users" element={<div>Users Page</div>} />
-                    <Route path="feedback" element={<div>Feedback Page</div>} />
-                    <Route path="gallery" element={<div>Gallery Page</div>} />
+                    <Route path="/bookings" element={<AdminBookings />} />
+                    <Route path="/categories" element={<AdminCategories/>} />
+                    <Route path="/rooms" element={<AdminRooms/>} />
+                    <Route path="/users" element={<AdminUsers/>} />
+                    <Route path="/feedback" element={<AdminFeedback/>} />
+                    <Route path="/gallery-Items" element={<AdminGalleryItems/>} />
                 </Routes>
             </div>
         </div>
