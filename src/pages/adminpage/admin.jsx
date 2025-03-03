@@ -30,8 +30,8 @@ export default function AdminPage() {
                 <Link to="/admin/feedback" className="text-white text-[30px] hover:font-bold flex items-center gap-2">
                     <MdFeedback /> Feedback
                 </Link>
-                <Link to="/admin/gallery" className="text-white text-[30px] hover:font-bold flex items-center gap-2">
-                    <MdPhotoLibrary /> Gallery Items
+                <Link to="/admin/gallery-Items" className="text-white text-[30px] hover:font-bold flex items-center gap-2">
+                    <MdPhotoLibrary /> Gallery_Items
                 </Link>
             </div>
 

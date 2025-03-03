@@ -1,8 +1,7 @@
 export default function AdminGalleryItems(){
     return(
         <div className="w-full">
-            Admin Gallery Items
-            
+            Admin Gallery Items    
         </div>
     )
 }
