@@ -13,7 +13,19 @@ export default function LoginPage(){
             email : email,
             password : password
         }).then((res)=>{
-            console.log(res)
+            console.log(res.data)
+            localStorage.setItem("token",res.data.token)
+
+            const token = localStorage.getItem("token")
+
+            console.log(token)
+
+            if(res.data.user.type == "admin"){
+                window.location.href = "/admin"
+            }else{
+                window.location.href = "/"
+            }
+
         }).catch((err)=>{
             console.log(err)
         })
